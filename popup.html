@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fafafa; }
+    h2 { font-size: 18px; color: #6200ee; margin-top: 0; }
+    .label { font-size: 12px; color: #666; margin-bottom: 5px; }
+    
+    select { 
+      width: 100%; padding: 8px; margin-bottom: 15px; 
+      border: 1px solid #ddd; border-radius: 4px; background: white;
+    }
+
+    button { 
+      width: 100%; padding: 12px; border: none; border-radius: 4px; 
+      font-weight: bold; cursor: pointer; transition: 0.3s;
+    }
+    
+    #processBtn { background: #6200ee; color: white; }
+    #processBtn:hover { background: #3700b3; }
+    
+    #status { font-size: 11px; text-align: center; margin-top: 10px; color: #888; }
+  </style>
+</head>
+<body>
+  <h2>Clarity Core</h2>
+  <div class="label">Select Accessibility Profile:</div>
+  <select id="modeSelect">
+    <option value="ADHD">ADHD (High Contrast / Punchy)</option>
+    <option value="DYSLEXIA">Dyslexia (Simple / Spaced)</option>
+    <option value="AUTISM">Autism (Literal / Direct)</option>
+  </select>
+
+  <button id="processBtn">Adapt Content</button>
+  <div id="status">Server: Online</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

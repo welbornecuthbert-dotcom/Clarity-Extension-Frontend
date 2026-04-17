@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Clarity Core",
+  "version": "1.0",
+  "description": "Adaptive UI for neurodiverse reading.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
